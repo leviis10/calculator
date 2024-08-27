@@ -74,7 +74,7 @@ function App() {
         {buttonRendered.map((el) => (
           <Button
             key={el}
-            className="bg-grape-7 px-4 py-3 outline-none active:shadow-inner active:shadow-black"
+            className="bg-grape-7 px-4 py-3 outline-none active:shadow-inner active:shadow-black hover:shadow-black hover:shadow-sm"
             onPress={() => buttonPressHandler(el)}
           >
             {el}
@@ -82,7 +82,7 @@ function App() {
         ))}
         <Button
           onPress={() => buttonPressHandler("=")}
-          className="bg-grape-7 px-4 py-3 outline-none active:shadow-inner active:shadow-black col-span-full"
+          className="bg-grape-7 px-4 py-3 outline-none active:shadow-inner active:shadow-black hover:shadow-black hover:shadow-sm col-span-full"
         >
           =
         </Button>
